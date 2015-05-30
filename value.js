@@ -14,10 +14,10 @@ page.open('http://www.carwale.com/used/carvaluation/',function() {
 			}else{
 				$('#cmbMake').val(2012).change();
 				$('#cmbMake').val(7).change();
-				$('#cmbMMake').on('change',function(){
-					$('#cmbModel').val(215).change();
+				$('#cmbMake').on('change',function(){
+					setTimeout($('#cmbModel').val(215).change(),1000);
 					$('#cmbModel').on('change',function(){
-							$('#cmbVersion').val(2639).change();
+							setTimeout($('#cmbVersion').val(2639).change(),1000);
 							clearInterval(interval);
 							});
 						});
